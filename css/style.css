@@ -3215,7 +3215,7 @@ section.parallax h2 {
 }
 .serviceBox_4 .service-icon i {
     font-size: 40px;
-    margin: 0 7px 0 0;
+    /*margin: 0 7px 0 0;*/
 }
 .serviceBox_4 .service-content {
     padding: 30px 0 12px;
