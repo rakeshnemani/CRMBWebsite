@@ -87,8 +87,8 @@
 .fraction-slider .next:hover:before,
 .fraction-slider .prev:hover:before
 {
-    color:#727CB6;
-    border-color:#727CB6;
+    color:#275c0a;
+    border-color:#275c0a;
     opacity:1;
     transition:all 0.4s ease-in-out;
     -webkit-transition:all 0.4s ease-in-out;

@@ -41,7 +41,7 @@
             // Big EasyPie Chart Effects;
             $('.circular-chart-big').easyPieChart({
                 animate : 2000,
-                barColor: "#727CB6",
+                barColor: "#275c0a",
                 trackColor : '#f9f9f9',
                 scaleColor: false,
                 lineWidth: 11,
@@ -57,7 +57,7 @@
                 animate : 2000,
                 lineWidth : 7,
                 lineCap : 'square',
-                barColor : '#727CB6',
+                barColor : '#275c0a',
                 trackColor : '#f9f9f9',
                 scaleColor : false,
                 onStep: function(from, to, percent) {

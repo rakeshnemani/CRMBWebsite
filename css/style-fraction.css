@@ -59,7 +59,7 @@
 .slide .slide-1
 {
     color: #fff;
-    font-size: 330%;
+    font-size: 230%;
     font-weight: 700;
     font-family: ' arial', sans-serif;
     text-transform:uppercase;
@@ -97,7 +97,7 @@
     box-sizing:content-box;
 }
 .slider .slide-2b{
-    background: #727cb6;
+    background: #275c0a;
     padding: 0.5% 0.7%;
     font-size: 180%;
     font-weight: 600;
@@ -114,7 +114,7 @@
 }
 
 .slider .slide-heading{
-    background:#fff;
+    /*background:#fff;*/
     color: #403F3F;
     font: 600 36px "open sans";
     padding: 1% 1.5%;
@@ -123,8 +123,8 @@
 }
 
 .slider .sub-line{
-    background:#373B3F;
-    color: #fff;
+    /*background:#373B3F;*/
+    color: #414052;/* #fff;*/
     font-size:22px;
     font-weight: normal;
     text-align:center;
