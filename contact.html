@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>CRMB - Get In Touch</title>
     <meta name="description" content="">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -139,16 +140,23 @@
                             <strong>Error!</strong> There was an error sending your message.
                         </div>
 
-                        <form id="contactForm" action="" novalidate="novalidate">
+
+                        <!-- web to case starts-->
+                        
+                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" id="contactForm" novalidate="novalidate">
+                            <input type=hidden name="orgid" value="00D2v000001tl92">
+                            <input type=hidden name="retURL" value="http://">
+
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-lg-6 ">
-                                        <input type="text" id="name" name="name" class="form-control" maxlength="100"
+                                        <input type="text" id="name" name="name" class="form-control" maxlength="80"
                                             data-msg-required="Please enter your name." value=""
                                             placeholder="Your Name">
                                     </div>
+                                    
                                     <div class="col-lg-6 ">
-                                        <input type="email" id="email" name="email" class="form-control" maxlength="100"
+                                        <input type="email" id="email" name="email" class="form-control" maxlength="80"
                                             data-msg-email="Please enter a valid email address."
                                             data-msg-required="Please enter your email address." value=""
                                             placeholder="Your E-mail">
@@ -159,7 +167,7 @@
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <input type="text" id="subject" name="subject" class="form-control"
-                                            maxlength="100" data-msg-required="Please enter the subject." value=""
+                                            maxlength="80" data-msg-required="Please enter the subject." value=""
                                             placeholder="Subject">
                                     </div>
                                 </div>
@@ -167,10 +175,9 @@
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-md-12">
-                                        <textarea id="message" class="form-control" name="message" rows="10" cols="50"
+                                        <textarea id="message" class="form-control" name="description" rows="10" cols="50"
                                             data-msg-required="Please enter your message." maxlength="5000"
                                             placeholder="Message"></textarea>
-
                                     </div>
                                 </div>
                             </div>
@@ -183,11 +190,17 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <input type="submit" data-loading-text="Loading..." class="btn btn-default btn-lg"
+                                    <input type="submit" name="submit" data-loading-text="Loading..." class="btn btn-default btn-lg"
                                         value="Send Message">
                                 </div>
                             </div>
                         </form>
+
+                        <!-- web to case ends-->
+
+
+
+
                     </div>
 
                     <div class="col-lg-4 col-md-4 col-sm-4">
