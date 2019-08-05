@@ -25,6 +25,12 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+        function showSuccess() {
+            $("#contactSuccess").removeClass("hidden");
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -132,7 +138,7 @@
 
                         <div class="alert alert-success hidden alert-dismissable" id="contactSuccess">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>Success!</strong> Your message has been sent to us.
+                            <strong>Success!</strong> Your message has been sent to us. We will get back to you.
                         </div>
 
                         <div class="alert alert-error hidden" id="contactError">
@@ -143,7 +149,7 @@
 
                         <!-- web to case starts-->
                         
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST"  novalidate="novalidate">
+                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" id="submitForm" onsubmit="showSuccess();return false;" novalidate="novalidate">
                             <input type=hidden name="orgid" value="00D2v000001tl92">
                             <input type=hidden name="retURL" value="http://">
 
@@ -390,9 +396,9 @@
 
     <script src="js/main.js"></script>
 
-    <!-- Start Style Switcher -->
+    <!-- Start Style Switcher 
     <div class="switcher"></div>
-    <!-- End Style Switcher -->
+    End Style Switcher -->
 </body>
 
 </html>
