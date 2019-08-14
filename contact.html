@@ -28,7 +28,6 @@
     <script>
         function showSuccess() {
             $("#contactSuccess").removeClass("hidden");
-            return false;
         }
     </script>
 </head>
@@ -149,9 +148,9 @@
 
                         <!-- web to case starts-->
                         
-                        <form action="" method="POST" id="contactForm"  novalidate="novalidate">
+                        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" id="submitForm" onsubmit="showSuccess();" novalidate="novalidate">
                             <input type=hidden name="orgid" value="00D2v000001tl92">
-                            <input type=hidden name="retURL" value="http://">
+                            <input type=hidden name="retURL" value="http://crmbtechnologies.com/contact.html">
 
                             <div class="row">
                                 <div class="form-group">
